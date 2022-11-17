@@ -1,14 +1,13 @@
 {
-  "name": "react-redux-boilerplate",
+  "name": "Stock Market Recommender",
   "version": "1.0.0",
-  "description": "Start React+Redux project with TypeScript in an easier and faster way",
+  "description": "Stock market recommender for GOTO exam",
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
     "start": "webpack serve --mode development --open",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,json}": [
@@ -58,7 +57,6 @@
     "fork-ts-checker-webpack-plugin": "^6.3.3",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
-    "husky": "^8.0.1",
     "jest": "^26.6.3",
     "lint-staged": "^13.0.3",
     "mini-css-extract-plugin": "^1.6.0",
@@ -77,17 +75,29 @@
     "webpack-dev-server": "^4.9.3"
   },
   "dependencies": {
+    "@date-io/dayjs": "^2.16.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/material": "^5.10.14",
+    "@mui/x-date-pickers": "^5.0.8",
+    "@mui/x-date-pickers-pro": "^5.0.8",
     "@reduxjs/toolkit": "1.8",
     "@types/arcgis-js-api": "^4.23.1",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
     "axios": "^0.21.2",
     "classnames": "^2.2.6",
+    "date-fns": "^2.29.3",
+    "dayjs": "^1.11.6",
     "esri-loader": "^3.5.0",
     "helper-toolkit-ts": "^1.1.13",
+    "luxon": "^3.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-jss": "^10.9.2",
     "react-redux": "^8.0.2",
+    "recharts": "^2.1.16",
     "redux": "^4.1.0"
   },
   "browserslist": [

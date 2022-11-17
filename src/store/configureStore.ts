@@ -1,8 +1,4 @@
-import {
-    configureStore,
-    getDefaultMiddleware,
-    DeepPartial,
-} from '@reduxjs/toolkit';
+import { configureStore, getDefaultMiddleware, DeepPartial, applyMiddleware, createStore } from '@reduxjs/toolkit';
 
 import rootReducer from './rootReducer';
 

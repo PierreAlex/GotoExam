@@ -1,8 +1,9 @@
 import { PartialRootState } from './configureStore';
 
-import { initialMapState, MapState } from '../store/Map/reducer';
+import { initialMapState } from './Stock/reducer';
+import { ComputedStocksList } from '../types/stockInfo/ComputedStockInfo';
 
-const getPreloadedMapState = (): MapState => {
+const getPreloadedMapState = (): ComputedStocksList => {
     return {
         ...initialMapState,
     };
@@ -10,7 +11,7 @@ const getPreloadedMapState = (): MapState => {
 
 const getPreloadedState = (): PartialRootState => {
     return {
-        Map: getPreloadedMapState(),
+        Stock: getPreloadedMapState(),
     };
 };
 

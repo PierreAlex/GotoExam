@@ -19,10 +19,7 @@ export default class ErrorBoundary extends PureComponent<Props, State> {
         };
     }
 
-    componentDidCatch(
-        error: Error,
-        errorInfo: { componentStack: string }
-    ): void {
+    componentDidCatch(error: Error, errorInfo: { componentStack: string }): void {
         // Catch errors in any components below and re-render with error message
         this.setState({ error, errorInfo });
 

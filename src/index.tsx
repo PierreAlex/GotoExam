@@ -8,8 +8,9 @@ import configureAppStore, { getPreloadedState } from './store/configureStore';
 
 import AppContextProvider from './contexts/AppContextProvider';
 
-import { DemoPage, HomePage } from './pages';
-
+import { HomePage } from './pages';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers-pro/AdapterDayjs';
 (async () => {
     const preloadedState = getPreloadedState();
 
@@ -19,7 +20,9 @@ import { DemoPage, HomePage } from './pages';
         <React.StrictMode>
             <ReduxProvider store={configureAppStore(preloadedState)}>
                 <AppContextProvider>
-                    <DemoPage />
+                    <LocalizationProvider dateAdapter={AdapterDayjs}>
+                        <HomePage />
+                    </LocalizationProvider>
                 </AppContextProvider>
             </ReduxProvider>
         </React.StrictMode>

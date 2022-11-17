@@ -1,11 +1,14 @@
 import React from 'react';
-import { ErrorBoundary } from '../../components';
+import PageHeader from '../../components/PageHeader/PageHeader';
+import { StockList } from '../../components/StockList';
+import ErrorBoundary from '../../components/ErrorBoundary/ErrorBoundary';
+import { StockForm } from '../../components/StockForm';
 
 const HomePage = () => {
     return (
         <ErrorBoundary>
-            <h1>React Redux Boilerplate</h1>
-            <p>You can put the components of your app here</p>
+            <PageHeader title="Stock market recommender" form={<StockForm />} />
+            <StockList />
         </ErrorBoundary>
     );
 };
