@@ -14,6 +14,11 @@ For GOTO EXAM
 - Redux react material and more
 - Easy to expand 
 
+## Please note
+
+- Generation algorithms should be based on last value
+- Buy and sell algorithms is not a perfect indicator but suit this exercise since it's random value
+
 ## Getting Started
 
 1. npm install 
